@@ -1,12 +1,9 @@
 import { combineReducers } from 'redux'
 import { listReducer } from './list-view-reducer'
+import { banner } from './banner-redecer'
 
-
-const reducerList = {
-  listReducer: listReducer
-}
-
-const rootReducer = combineReducers(reducerList)
-
-export default rootReducer
+export default combineReducers({
+  listReducer: listReducer,
+  banner: banner
+})
 
